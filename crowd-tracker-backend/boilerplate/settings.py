@@ -50,7 +50,7 @@ WSGI_APPLICATION = 'boilerplate.wsgi.application'
 
 DATABASE_SETTINGS = {
     'mongodb': {
-        'NAME': os.environ.get('MONGO_DB_NAME', 'boilerplate'),
+        'NAME': os.environ.get('MONGO_DB_NAME', 'core'),
         'USER': os.environ.get('MONGO_DB_USER'),
         'PASS': os.environ.get('MONGO_DB_PASSWORD'),
         'HOST': os.environ.get('MONGO_DB_HOST', 'localhost'),
@@ -85,7 +85,7 @@ AUTH_PASSWORD_VALIDATORS = []
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = os.environ.get('TIMEZONE', 'UTC')
+TIME_ZONE = os.environ.get('TIMEZONE', 'Asia/Kolkata')
 
 USE_I18N = True
 
