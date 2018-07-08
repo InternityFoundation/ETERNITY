@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/selected_place_ll"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:text="Book From Selected Place"
+                    />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+
+                    android:id="@+id/spinner_palces"
+                    >
+
+                </Spinner>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="book"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/book_selected_btn"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/current_place_ll"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:id="@+id/current_place_book_btn"
+                    android:text="Book Best Station From My \n Current Location"
+                    android:layout_height="match_parent">
+
+                </Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/custom_place_ll"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:text="Enter Custom Location"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/longitude"
+                        android:inputType="numberDecimal"
+                        android:hint="Longitude"/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/latitude"
+                        android:inputType="numberDecimal"
+                        android:hint="Latitude"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:id="@+id/costom_place_book_btn"
+                    android:layout_gravity="center"
+                    android:text="book"
+                    android:layout_height="match_parent">
+                </Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
