@@ -1,0 +1,38 @@
+//endpoint - api/station POST
+//
+//request - {
+//  lat,
+//  lng,
+//  scheduleTime
+//}
+//
+//response - {
+//  data : [
+//    {
+//      stationName,
+//      stationCode,
+//      dist,
+//      eta,
+//      popLevel (1,2,3 - 1 be lowest)
+//    }
+//  ]
+//}
+
+
+/***book***/
+
+//endpoint - /api/book POST
+//
+//request - {
+//  'lat': 123.123,
+//  'lng': 23.67,
+//  'stationCode': 'ABC',
+//  'scheduleTime': 123456
+//}
+//
+//response - {
+//  'stationName': 'abc',
+//  'driverName': 'asa',
+//  'rickshawNumber': 'CH 16 090',
+//  'eta': 123123,
+//}
