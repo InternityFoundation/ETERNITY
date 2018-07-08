@@ -19,10 +19,10 @@ from operator import itemgetter, attrgetter
 
 gmaps = googlemaps.Client(key='AIzaSyCR3sNkOzWlZmahHJxTQX1pRsHJjZyEOQ0')
 
-pickle_in = open("/Users/shreybatra/Desktop/proj/eternity/crowd-tracker-backend/crowd_tracker/metro_data", 'rb')
+pickle_in = open("crowd_tracker/metro_data", 'rb')
 arr = pickle.load(pickle_in)
 
-sto = open('/Users/shreybatra/Desktop/proj/eternity/crowd-tracker-backend/crowd_tracker/station_code', 'rb')
+sto = open('crowd_tracker/station_code', 'rb')
 st_cd1 = pickle.load(sto)
 
 # print(st_cd1)
