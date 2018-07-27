@@ -43,6 +43,6 @@ Reasons for this:
 * Shrey Batra - Backend
 * Ayushi Jain - AWS Cloud Hosting
 * Shaurya Uppal - Data Generation and Scaling
-* Anuj Jindal - Android
+* Anuj Jindal - Android And Cloud
 * Akshat Aggarwal - Data Scaling
 **************************
